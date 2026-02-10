@@ -1,25 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <title>Frontend Mentor | Contact form</title>
-<link rel="stylesheet" href="style.css"
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <form id="contactForm">
-    <h1>Contact Us</h1>
-    <label>First Name</label>
-    <input text="text" id="first-name" placeholder="Enter your name" required>
-    <label>Last Name</label>
-    <input text="text" id="Last-name" placeholder="Enter your last name" required><br>
-    <label for="email">Email Address </label>
-    <input text="text" id="email" placeholder="enter your email" required><br>
-    Query Type <br>
-    <input text="radio" id="option1" name="General Enquiry" value="General enquiry">
-    <label></label>
-</form>
-</div>
+
+  <div class="form-container">
+    <h2>Contact Us</h2>
+
+    <form>
+
+      <!-- First Row -->
+      <div class="row">
+        <div class="input-box">
+          <label>First Name *</label>
+          <input type="text" required>
+        </div>
+
+        <div class="input-box">
+          <label>Last Name *</label>
+          <input type="text" required>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="input-box">
+        <label>Email Address *</label>
+        <input type="email" required>
+      </div>
+
+      <!-- Query Type -->
+      <label>Query Type *</label>
+      <div class="query-type">
+        <button type="button">General Enquiry</button>
+        <button type="button">Support Request</button>
+      </div>
+
+      <!-- Message -->
+      <div class="input-box">
+        <label>Message *</label>
+        <textarea rows="4" required></textarea>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="checkbox">
+        <input type="checkbox" required>
+        <label>I consent to being contacted by the team</label>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="submit-btn">Submit</button>
+
+    </form>
+  </div>
+<script src="script.js"></script>
 </body>
 </html>
